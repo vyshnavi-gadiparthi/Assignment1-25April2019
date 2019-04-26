@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To check uppercase</title>
+</head>
+<body>
+	<center>Enter a string: <input type="text" id="somestring"><br>
+	        Enter a position of character:<input type="text" id="charpos"><br>
+	        <button onclick="toCheck();">Button</button></center>
+
+	<script type="text/javascript">
+		function toCheck(){
+			var s =document.getElementById('somestring').value;
+			var number = document.getElementById('charpos').value;
+			if(s.charAt(number) == s.charAt(number).toUpperCase())
+				alert("The character is " +s.charAt(number)+ " is uppercase");
+			else
+				alert("The character is " +s.charAt(number)+ " is lowerrcase");
+		}
+	</script>        
+</body>
+</html>

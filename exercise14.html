@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	Enter the first string:<input id = "firststring" type="text"><br>
+	Enter the second string:<input type="text" id="secondstring"><br>
+	<button type = "button" onclick="Stringstart();">Submit</button>
+
+<script type="text/javascript">
+	function Stringstart(){
+		var str1 = document.getElementById('firststring').value;
+		var str2 = document.getElementById('secondstring').value;
+		var str3 = str1.split(" ");
+
+		if(str3[0] == str2){
+			alert("Strings are matched");
+		}
+		else
+			alert("Strings are not matched");
+	}
+</script>	
+</body>
+</html>

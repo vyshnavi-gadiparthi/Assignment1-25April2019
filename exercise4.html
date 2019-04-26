@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Changing to upper case</title>
+</head>
+<body>
+      <center>Enter a String:<br><input type="text" id="giveString"><br>
+      		  					<input type="submit" onclick="FirstCapital();"><br>
+      		  				    <label id="upperString"></center>
+
+      <script type="text/javascript">
+      		function FirstCapital(){
+      			var str = document.getElementById('giveString').value;
+      			console.log("Given string is" +str);
+      			var arr = str.split(' ');
+      			for (var i = 0; i < arr.length; i++) {
+      			arr[i]= arr[i].charAt(0).toUpperCase()+arr[i].substring(1);
+
+      		}
+      		document.getElementById('upperString').innerHTML = "The Uppercase string is " +arr;
+      		}
+
+      </script>	  				    	
+</body>
+</html>

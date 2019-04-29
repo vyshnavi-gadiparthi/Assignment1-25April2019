@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button onclick="tocreate();"> Click here to create New text box</button><br>
+	<label id = "createtext"></label>
+	<script type="text/javascript">
+		function tocreate()
+		{
+			
+			var inpu = document.createElement('input');
+			var label = document.createElement('Label');
+			label.innerHTML = "new label";
+			inpu.setAttribute("type", "text");
+			var foo = document.getElementById("createtext");
+			foo.appendChild(label);
+			foo.appendChild(inpu);
+
+		}
+		
+	</script>
+
+</body>
+</html>

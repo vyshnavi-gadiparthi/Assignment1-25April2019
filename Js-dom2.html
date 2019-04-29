@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To replace the body content</title>
+</head>
+<body>
+	<p id = "exist">
+		Some sample text
+	</p>
+	<label id = "new"></label>
+	<button onclick="Replacedata();">Click to replace</button>
+
+    <script type="text/javascript">
+
+    	function Replacedata() {
+    		var newPara = document.createElement("P");
+    		document.getElementById("exist").style.display = "none";
+    		var newData = prompt("Enter the data to be displayed");
+    		newPara.innerHTML = newData;
+    		document.getElementById('new').appendChild(newPara);
+    	}
+    </script>
+</body>
+</html>

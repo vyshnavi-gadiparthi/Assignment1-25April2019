@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Second word to bold</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$("#displaybold").click(function() {
+		
+			$("div").each(function() {
+         		var x = $(this).html();
+         		var word = $(this).html().split(' ')[1]; 
+         		$(this).html($(this).html().replace(word,'<b> '+word+' </b>'));
+         	
+         		
+
+         	
+         	//$(this).html("<b>"+word+"</b>");
+ 		 });
+			//$("word:second").html('boldy');
+			//$("div div:second").html("(boldy)");
+			//$("div").html('<b>${}</b>');
+				
+			});
+		});
+		
+
+	
+	
+</script>
+
+<div>
+	<span>
+	It is the first division
+</span>
+</div>
+
+<div>
+It was the second division
+</div>
+
+<div>
+	The third division
+</div>
+<button id = "displaybold">Click to display bold</button>
+</body>
+</html>

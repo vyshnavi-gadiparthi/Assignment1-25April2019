@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<select id = "del">
+		<option>Monday</option>
+		<option>Tuesday</option>
+		<option>Wednesday</option>
+		<option>Thursday</option>
+		<option>Friday</option>
+	</select><br><br>
+	<button>Click to remove</button>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('button').click(function(){
+			
+			$('select').children('option').remove();
+			
+			$("#del").append('<option value="option6">Saturday</option>');
+			
+		});
+	
+	});
+</script>	
+
+		
+</body>
+</html>

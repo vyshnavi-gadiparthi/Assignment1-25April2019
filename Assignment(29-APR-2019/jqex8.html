@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<span id = "Tochange">Some Text was present</span><br>
+<button>Click to add</button>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button").click(function(){
+			$("#Tochange").text("Added some more text using jQuery");
+		});
+	});
+</script>
+</body>
+</html>

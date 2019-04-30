@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To display href attribute value</title>
+</head>
+<body>
+	<a href="www.google.com" id="1"></a>
+	<a href="www.w3.com" id="2"></a>
+	<a href="www.ibm.com" id="3"></a>
+	<a href="www.microsoft.com" id="4"></a>
+	<button onclick="hrefAttr();">Click to display</button>
+	<label id = "display"></label>
+<script type="text/javascript">
+	function hrefAttr(){
+		var sum = document.links.length;
+		var value = document.links[sum -1];
+		document.getElementById('display').innerHTML = value.id;
+	}
+</script>	
+	
+
+</body>
+</html>

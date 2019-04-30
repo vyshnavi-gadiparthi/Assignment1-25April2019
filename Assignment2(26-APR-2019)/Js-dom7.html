@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To remove option from dropbox</title>
+</head>
+<body>
+	<button onclick="removeoption();">Click to remove option</button>
+		<select id="selectoption">
+				<option>Chennai</option>
+				<option>Bangalore</option>
+				<option>Pune</option>
+				<option>Kolkata</option>
+		</select>
+<script type="text/javascript">
+	function removeoption()
+	{
+		
+		var a = document.getElementById('selectoption');
+		a.remove(a.selectedIndex);
+	}
+</script>
+</body>
+</html>

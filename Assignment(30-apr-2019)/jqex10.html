@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To add new row</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<table border="1px solid black;">
+	<tr>
+		<td>UserName</td>
+		<td>Password</td>
+		</tr>
+	
+		<tr><td>Vyshnavi</td>
+		<td>vyshu</td></tr>
+	
+		<tr><td>Bhavana</td>
+		<td>3874</td>
+	</tr>
+</table>
+<button>Click to add new row</button>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$("button").click(function() {
+			var data="<tr><td>Sree</td><td>4872348</td></tr>";
+			$("table").append(data);
+		});
+
+	});
+</script>
+
+</body>
+</html>

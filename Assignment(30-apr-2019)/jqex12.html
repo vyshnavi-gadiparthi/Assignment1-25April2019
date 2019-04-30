@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change to title case</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<center>Enter the text :<input type="text" id="changeText"></center>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#changeText").mouseout(function() {
+		   var arr = $("#changeText").val().split(' ');
+		   //$('#changeText').val().toTitleCase();
+		    // $("#changeText").text(arr[0].charAt(0).toUpperCase());
+		   //$(arr(0)).charAt(0).toupperase();
+		   console.log(arr[0].charAt(0).toUpperCase());
+
+		   for (var i = 0; i < arr.length; i++) {
+		   	$("#changeText").val($("#changeText").val().replace(arr[i], arr[i].charAt(0).toUpperCase()+arr[i].substring(1)));
+		  
+		   }
+		   
+	   
+	});
+	});
+</script>	
+
+</body>
+</html>

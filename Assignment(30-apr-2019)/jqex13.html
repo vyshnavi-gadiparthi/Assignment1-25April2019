@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To alert the selected combo box</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<select id = "toSelect">
+		<option value="Select">Select your option</option>
+		<option>Bangalore</option>
+		<option>Hyderabad</option>
+		<option>Chennai</option>
+		<option>Pune</option>
+
+	</select>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#toSelect").change(function() {
+			var selec = $(this).children('option:selected').val();
+			alert("The selected country is " +selec);
+		});
+	});
+</script>	
+
+</body>
+</html>

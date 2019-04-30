@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap style warning when value is given in text field</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+	<input type="text" id="bootwarn">
+	<div id="division">
+  	
+	</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#bootwarn").keyup(function(){
+			var para = document.createElement('p');
+			para.id = "alertWarning";
+			para.innerHTML = "<strong>Warning!</strong>Enter data in this field is prohibited";
+			document.getElementById('division').appendChild(para);
+			document.getElementById("alertWarning").className = "alert alert-warning";
+		});
+		
+	});
+</script>	
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To get first column value</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<table id = "getvalue" border="1px solid black;">
+	<tr>
+		<td>UserName</td>
+		<td>Password</td>
+		</tr>
+	
+		<tr><td>Vyshnavi</td>
+		<td>vyshu</td></tr>
+	
+		<tr><td>Bhavana</td>
+		<td>3874</td>
+	</tr>
+</table>
+<label id ="toDisplay"></label>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+		console.log($("tr td:first").text());
+		//$("#toDisplay").get('#column1');
+		//console.log($("#toDisplay").text(#column1));
+	});
+</script>	
+
+
+
+</table>
+</body>
+</html>

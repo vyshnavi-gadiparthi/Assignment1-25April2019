@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To open new window onclick of a button</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<button>Click to open new window</button>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button").click(function() {
+		   'a[href=http://www.google.com]';
+		   var x = window.open('http://www.google.com','_blank', 'width=500, height=500');
+		   if(x)
+		   	console.log("window opened");
+		   else
+		   	console.log("window closed");
+    		
+  		});
+	});	
+
+</script>
+
+
+</body>
+</html>

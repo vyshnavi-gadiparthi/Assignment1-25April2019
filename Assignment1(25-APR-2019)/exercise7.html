@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To count substring</title>
+</head>
+<body>
+		<center>Enter a string :<br> <input type="text" id="givenstring"><br>
+			    Enter a substring:<br><input type = "text" id = "Sstring"><br>
+								     <button onclick="occurance();">Click on button</button><br>
+								     <label id = "stringsub"></label></center>
+
+	 	<script type="text/javascript">
+	 		function occurance(){
+	 			var str = document.getElementById('givenstring').value;
+	 			var sub = document.getElementById('Sstring').value;
+	 			var arr = str.split(sub);
+	 			console.log(arr.length - 1);
+	 			document.getElementById('stringsub').innerHTML = "The occurance of sub string is " +(arr.length - 1);
+
+	 		}
+	 	</script>							     
+</body>
+</html>

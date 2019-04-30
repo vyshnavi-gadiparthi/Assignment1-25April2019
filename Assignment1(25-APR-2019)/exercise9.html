@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Merging an array</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		function filter(array){
+
+			var first = array.concat();
+			for(var i = 0; i < first.length;i++){
+				for (var j = i+1; j < first.length; ++j){
+					if(first[i] == first[j])
+
+						first.splice(j--, 1);
+				}
+			}
+			return first;
+		}
+		var array1 = [2, 3, 4];
+		var array2 = [4, 5, 2];
+
+		var array3 = filter(array1.concat(array2));
+		console.log(array3);
+		alert(array3);
+		
+		
+	</script>
+
+</body>
+</html>

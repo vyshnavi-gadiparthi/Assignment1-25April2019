@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To highlight the disabled elements</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<center><input type="text" class="disabledEl" disabled="true"><br>
+			<input type="text" class="disabledEl" disabled="true"><br>
+			<input type="text" class="disabledEl" disabled="true"><br>
+			<input type="text" class="disabledEl"><br>
+			
+	<button id = "toDisable">Click to highlight</button>
+	</center>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#toDisable").click(function() {
+			$.each($(".disabledEl"), function(index, val){
+				if($(this).prop("disabled")){
+					$(this).css('background-color', 'red');
+				}
+			});
+		});	
+		
+	});
+</script>	
+
+
+</body>
+</html>

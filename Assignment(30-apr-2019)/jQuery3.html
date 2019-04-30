@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To move an element from one div to another div</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div id = "div1" style="background-color: red;">
+		This is First Division
+	</div><br>
+	<div id = "div2" style="background-color: blue;">
+		
+	</div>
+	<button>Click to move from one to another</button>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button").click(function() {
+			$('#div1').contents().appendTo('#div2')
+			
+		});
+	});
+</script>	
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<center>Enter User Id :<input type="text" id="checktext" maxlength="20">
+	<div id = "toDisplay" style="color: red;">20 charater(s) are required</div> </center>
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+		$("#checktext").keyup(function() {
+			var maxlength = 20;
+			//console.log("its working");
+			var textLength = maxlength - $(this).val().length;
+			console.log("its working");
+			$("#toDisplay").text(textLength +" Characters Remaining");
+			if( textLength == 0)
+			$("#toDisplay").empty();
+		
+		});
+	});	
+</script>	
+</body>
+</html>
